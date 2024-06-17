@@ -51,10 +51,6 @@
 <details>
   <summary><h3>팀원 및 참고 자료</h3>
   </summary>
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yeonjin0121)](https://github.com/anuraghazra/github-readme-stats)<br>
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=isliese)](https://github.com/anuraghazra/github-readme-stats)
-
-
 [![Yeonjin's GitHub stats](https://github-readme-stats.vercel.app/api?username=yeonjin0121)](https://github.com/anuraghazra/github-readme-stats)
 [![Chanran's GitHub stats](https://github-readme-stats.vercel.app/api?username=isliese)](https://github.com/anuraghazra/github-readme-stats)
 [![Yeonwoo's GitHub stats](https://github-readme-stats.vercel.app/api?username=yeonujirong)](https://github.com/anuraghazra/github-readme-stats)
