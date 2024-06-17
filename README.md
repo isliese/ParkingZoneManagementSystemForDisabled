@@ -1,12 +1,15 @@
 <h3>프로젝트명</h3>
 
----
-
 <h3>목차</h3>
 
 1. [프로젝트 배경](#1장.-프로젝트-배경)
 2. [프로젝트 목적](#2장.-프로젝트-목적)
-
+3. [프로젝트 설명](#3장.-프로젝트-설명)
+4. [프로젝트 결과](#4장.-프로젝트-결과)
+5. [프로젝트 설치 및 실행 방법](#5장.-프로젝트-설치-및-실행-방법)
+6. [팀원 및 참고 자료](#6장.-팀원-및-참고-자료)
+7. [라이센스](#7장.-라이센스)
+8. [사용 툴](#8장.-사용-툴)
 
 ---
 
@@ -66,17 +69,17 @@
 </details>
 
 ---
-
-<h3>사용한 언어</h3>
+<h3>사용 툴</h3>
+<h4>사용한 언어</h4>
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white">
 <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=Flask&logoColor=white">
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white"/>
 
 
-<h3>사용한 IDE</h3>
+<h4>사용한 IDE</h4>
 <img src="https://img.shields.io/badge/Visual Studio-5C2D91?style=flat-square&logo=Visual Studio&logoColor=white"/>
 
-<h3>사용한 협업 툴</h3>
+<h4>사용한 협업 툴</h4>
 <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"/>
 
 
