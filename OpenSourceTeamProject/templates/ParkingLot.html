@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Parking Lot Page</title>
+
+  <style>
+    #padding {
+      margin-top: 100px;
+    }
+
+    /* 이미지를 가운데로 정렬하기 위한 스타일 */
+    img {
+      display: block;
+      /* 이미지를 블록 요소로 설정하여 가로 중앙 정렬을 적용합니다. */
+      margin: auto;
+      /* 자동 마진을 사용하여 수평 중앙 정렬을 적용합니다. */
+    }
+
+    /* Home 이미지 위치 설정 */
+    .HomeImage {
+      position: absolute;
+      /* 절대 위치를 사용하여 배치합니다. */
+      left: 30px;
+      /* x 좌표값을 설정합니다. */
+      top: 29px;
+      /* y 좌표값을 설정합니다. */
+    }
+
+    /* BottomCar 이미지 위치 설정 */
+    .BottomCarImage {
+      position: absolute;
+      /* 절대 위치를 사용하여 배치합니다. */
+      left: 611px;
+      /* x 좌표값을 설정합니다. */
+      top: 288px;
+      /* y 좌표값을 설정합니다. */
+    }
+
+    /* TopCar 이미지 위치 설정 */
+    .TopCarImage {
+      position: absolute;
+      /* 절대 위치를 사용하여 배치합니다. */
+      left: 419px;
+      /* x 좌표값을 설정합니다. */
+      top: 0px;
+      /* y 좌표값을 설정합니다. */
+    }
+
+    /* ParkingLot 이미지 위치 설정 */
+    .ParkingLotImage {
+      position: absolute;
+      /* 절대 위치를 사용하여 배치합니다. */
+      left: 7035px;
+      /* x 좌표값을 설정합니다. */
+      top: 822px;
+      /* y 좌표값을 설정합니다. */
+    }
+  </style>
+</head>
+
+<body>
+  <div id="padding"></div>
+
+  <!-- Home 이미지 -->
+  <div class="HomeImage">
+    <img src="{{ url_for('static', filename='image/Home.png') }}" width="313" height="105"
+      style="display: block; margin-left: auto; margin-right: auto" />
+  </div>
+
+  <!-- BottomCar 이미지 -->
+  <div class="BottomCarImage">
+    <img src="{{ url_for('static', filename='image/BottomCar.png') }}" width="1579" height="819"
+      style="display: block; margin-left: auto; margin-right: auto" />
+  </div>
+
+  <!-- TopCar 이미지 -->
+  <div class="TopCarImage">
+    <img src="{{ url_for('static', filename='image/TopCar.png') }}" width="1579" height="815"
+      style="display: block; margin-left: auto; margin-right: auto" />
+  </div>
+
+  <!-- ParkingLot 이미지 -->
+  <div class="ParkingLotImage">
+    <img src="{{ url_for('static', filename='image/ParkingLot.png') }}" width="1512" height="982"
+      style="display: block; margin-left: auto; margin-right: auto" />
+  </div>
+
+</body>
+
+</html>
