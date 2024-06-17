@@ -3,6 +3,7 @@
 
 <head>
   <title>Parking Lot Page</title>
+Front
 
   <style>
     #padding {
@@ -41,21 +42,28 @@
     .TopCarImage {
       position: absolute;
       /* 절대 위치를 사용하여 배치합니다. */
-      left: 419px;
-      /* x 좌표값을 설정합니다. */
-      top: 0px;
-      /* y 좌표값을 설정합니다. */
+      left: 852px;
+      /* 피그마에서 설정한 x 좌표값을 사용합니다. */
+      top: 680px;
+      /* 피그마에서 설정한 y 좌표값을 사용합니다. */
     }
 
     /* ParkingLot 이미지 위치 설정 */
     .ParkingLotImage {
       position: absolute;
       /* 절대 위치를 사용하여 배치합니다. */
-      left: 7035px;
+      left: 703px;
       /* x 좌표값을 설정합니다. */
       top: 822px;
       /* y 좌표값을 설정합니다. */
-    }
+
+    /* 배경 이미지 설정 */
+    body {
+            background-image: url('{{ url_for('static', filename='image/ParkingLot.png') }}');
+            background-size: cover; /* 배경 이미지를 화면 크기에 맞게 조정 */
+            background-repeat: no-repeat; /* 배경 이미지 반복 방지 */
+            background-attachment: fixed; /* 배경 이미지를 고정 */
+        }
   </style>
 </head>
 
@@ -64,27 +72,25 @@
 
   <!-- Home 이미지 -->
   <div class="HomeImage">
-    <img src="{{ url_for('static', filename='image/Home.png') }}" width="313" height="105"
-      style="display: block; margin-left: auto; margin-right: auto" />
+    <a href="{{ url_for('index') }}">
+      <img src="{{ url_for('static', filename='image/Home.png') }}" width="313" height="105"
+        style="display: block; margin-left: auto; margin-right: auto" />
+    </a>
   </div>
 
-  <!-- BottomCar 이미지 -->
+  <!-- parkinglot_car 이미지 -->
   <div class="BottomCarImage">
-    <img src="{{ url_for('static', filename='image/BottomCar.png') }}" width="1579" height="819"
+    <img src="{{ url_for('static', filename='image/parkinglot_car.png') }}" width="450" height="330"
       style="display: block; margin-left: auto; margin-right: auto" />
   </div>
 
-  <!-- TopCar 이미지 -->
+  <!-- parkinglot_car 이미지 -->
   <div class="TopCarImage">
-    <img src="{{ url_for('static', filename='image/TopCar.png') }}" width="1579" height="815"
+    <img src="{{ url_for('static', filename='image/parkinglot_car.png') }}" width="450" height="330"
       style="display: block; margin-left: auto; margin-right: auto" />
   </div>
 
-  <!-- ParkingLot 이미지 -->
-  <div class="ParkingLotImage">
-    <img src="{{ url_for('static', filename='image/ParkingLot.png') }}" width="1512" height="982"
-      style="display: block; margin-left: auto; margin-right: auto" />
-  </div>
+
 
 </body>
 

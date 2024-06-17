@@ -1,73 +1,75 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Login Success Page</title>
 
-    <style>
-      #padding {
-        margin-top: 100px;
-      }
+<head>
+  <title>Login Success Page</title>
+  <meta http-equiv="refresh" content="5;url=ParkingLot.html">
+  <style>
+    #padding {
+      margin-top: 100px;
+    }
 
-      /* 이미지를 가운데로 정렬하기 위한 스타일*/
-      img {
-        display: block; /* 이미지를 블록 요소로 설정하여 가로 중앙 정렬을 적용합니다. */
-        margin: auto; /* 자동 마진을 사용하여 수평 중앙 정렬을 적용합니다. */
-      }
+    /* 이미지를 가운데로 정렬하기 위한 스타일*/
+    img {
+      display: block;
+      /* 이미지를 블록 요소로 설정하여 가로 중앙 정렬을 적용합니다. */
+      margin: auto;
+      /* 자동 마진을 사용하여 수평 중앙 정렬을 적용합니다. */
+    }
 
-      /* 저작권 이미지 위치 설정 */
-      .Copyright {
-        position: absolute; /* 절대 위치를 사용하여 배치합니다. */
-        left: 0; /* x 좌표값을 설정합니다. */
-        top: 898px; /* y 좌표값을 설정합니다. */
-      }
+    /* 저작권 이미지 위치 설정 */
+    .Copyright {
+      position: absolute;
+      /* 절대 위치를 사용하여 배치합니다. */
+      left: 0;
+      /* x 좌표값을 설정합니다. */
+      top: 898px;
+      /* y 좌표값을 설정합니다. */
+    }
 
-      /* 로그인 성공 이미지 위치 설정 */
-      .LoginSuccessPicture {
-        position: absolute; /* 절대 위치를 사용하여 배치합니다. */
-        left: 642px; /* x 좌표값을 설정합니다. */
-        top: 275px; /* y 좌표값을 설정합니다. */
-      }
+    /* 로그인 성공 이미지 위치 설정 */
+    .LoginSuccessPicture {
+      position: absolute;
+      /* 절대 위치를 사용하여 배치합니다. */
+      left: 642px;
+      /* x 좌표값을 설정합니다. */
+      top: 275px;
+      /* y 좌표값을 설정합니다. */
+    }
 
-      /* 로그인 확인 이미지 위치 설정 */
-      .LoginVerified {
-        position: absolute; /* 절대 위치를 사용하여 배치합니다. */
-        left: 679px; /* x 좌표값을 설정합니다. */
-        top: 600px; /* y 좌표값을 설정합니다. */
-      }
-    </style>
-  </head>
-  <body>
-    <div id="padding"></div>
+    /* 로그인 확인 이미지 위치 설정 */
+    .LoginVerified {
+      position: absolute;
+      /* 절대 위치를 사용하여 배치합니다. */
+      left: 679px;
+      /* x 좌표값을 설정합니다. */
+      top: 600px;
+      /* y 좌표값을 설정합니다. */
+    }
+  </style>
+</head>
 
-    <!-- 저작권 이미지 (CopyRight.png) -->
-    <div class="Copyright">
-      <img
-        src="image/CopyRight.png"
-        width="1512"
-        height="98"
-        style="display: block; margin-left: auto; margin-right: auto"
-      />
-    </div>
+<body>
+  <div id="padding"></div>
 
-    <!-- 로그인 성공 이미지 (LoginSuccessPicture.png) -->
-    <div class="LoginSuccessPicture">
-      <img
-        src="image/LoginSuccessPicture.png"
-        width="284"
-        height="309"
-        style="display: block; margin-left: auto; margin-right: auto"
-      />
-    </div>
+  <!-- 저작권 이미지 (CopyRight.png) -->
+  <div class="Copyright">
+    <img src="{{ url_for('static', filename='image/CopyRight.png') }}" width="1512" height="98"
+      style="display: block; margin-left: auto; margin-right: auto" />
+  </div>
 
-    <!-- 로그인 확인 이미지 (LoginVerified!.png) -->
-    <div class="LoginVerified">
-      <img
-        src="image/LoginVerified!.png"
-        width="263"
-        height="36"
-        style="display: block; margin-left: auto; margin-right: auto"
-      />
-    </div>
-    
-  </body>
+  <!-- 로그인 성공 이미지 (LoginSuccessPicture.png) -->
+  <div class="LoginSuccessPicture">
+    <img src="{{ url_for('static', filename='image/LoginSuccessPicture.png') }}" width="284" height="309"
+      style="display: block; margin-left: auto; margin-right: auto" />
+  </div>
+
+  <!-- 로그인 확인 이미지 (LoginVerified!.png) -->
+  <div class="LoginVerified">
+    <img src="{{ url_for('static', filename='image/LoginVerified!.png') }}" width="263" height="36"
+      style="display: block; margin-left: auto; margin-right: auto" />
+  </div>
+
+</body>
+
 </html>

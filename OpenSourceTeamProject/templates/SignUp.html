@@ -86,6 +86,19 @@
             margin: 0;
         }
 
+        .input-field {
+            flex: 1;
+            border: none;
+            background: none;
+            outline: none;
+            font-size: 16px;
+            margin-left: 10px;
+            color: #333;
+        }
+
+
+        
+
         #EmailContainer {
             margin-bottom: 20px;
         }
@@ -97,11 +110,10 @@
 
     <!--홈 버튼 이미지-->
     <div id="HomeButton">
-        <a href="home.html">
-            <img src="image/HomeButton.png" width="82" height="95" />
+        <a href="{{ url_for('index') }}">
+            <img src="{{ url_for('static', filename='image/HomeButton.png') }}" width="82" height="95" />
         </a>
     </div>
-
 
     <!--서비스 이름 텍스트-->
     <h1 id="ServiceName">서비스 이름</h1>
@@ -109,20 +121,29 @@
     <!--이메일 입력받는 박스-->
     <div id="EmailContainer" class="input-container">
         <span class="input-text">이메일</span>
+        <input type="email" id="emailInput" name="email" placeholder="이메일을 입력하세요" class="input-field">
     </div>
+
 
     <!--비밀번호 입력받는 박스-->
     <div id="PasswordContainer" class="input-container">
         <span class="input-text">비밀번호</span>
+        <input type="password" id="passwordInput" name="password" placeholder="비밀번호를 입력하세요" class="input-field">
     </div>
 
-    <!--로그인 이미지-->
+
+    <!--회원가입 이미지-->
     <div class="inline-images">
-        <img src="image/Member.png" width="177" height="60" />
+        <a href="{{ url_for('signupsuccess') }}">
+            <img src="{{ url_for('static', filename='image/Member.png') }}" width="177" height="60" />
+        </a>
     </div>
 
-    <!--copyright 이미지-->
-    <img src="image/CopyRight.png" width="1700" height="90" class="bottom-image" />
+    <!--저작권 이미지-->
+    <a href="{{ url_for('nodisabled') }}">
+        <img src="{{ url_for('static', filename='image/CopyRight.png') }}" width="1700" height="90"
+            class="bottom-image" />
+    </a>
 </body>
 
 </html>
