@@ -1,21 +1,43 @@
 ####이미지 인식 원본 코드
+
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 import pytesseract
 import random
+from PIL import Image
+import os
 
 registered_car=['63두9655','25더2661'] #등록된 차량 번호 
 
 plt.style.use('dark_background')
 
+
+#+'car_image'
 car_number=random.randint(1,12)
-img_ori = cv2.imread('car_num{}.jpg'.format(car_number))
+#here_path = os.path.abspath('.')
+#print(here_path)
+img_path = 'C:/Users/afrom/car_image/car_num{}'.format(car_number)
+print('현재 경로 : {}'.format(img_path))
+
+#img_array = np.fromfile(img_path, np.uint8)
+img_ori = cv2.imdecode(img_path, cv2.IMREAD_COLOR)
+#img_ori = cv2.imread(img_path)
+
+if img_ori is None:
+    print("Error: Image not found or failed to load.")
+else:
+    # 이미지 크기 확인
+    height, width, channel = img_ori.shape
+    # OCR 수행
+    text = pytesseract.image_to_string(Image.fromarray(img_ori))
+    print(text)
 
 height, width, channel = img_ori.shape
+
 plt.figure(figsize=(12, 10))
+
 plt.imshow(img_ori,cmap='gray')
-print(height, width, channel)
 
 print(height, width, channel)
 
