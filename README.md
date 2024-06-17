@@ -55,7 +55,10 @@
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=isliese)](https://github.com/anuraghazra/github-readme-stats)
 
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=yeonjin0121)](https://github.com/anuraghazra/github-readme-stats)
+[![Yeonjin's GitHub stats](https://github-readme-stats.vercel.app/api?username=yeonjin0121)](https://github.com/anuraghazra/github-readme-stats)
+[![Chanran's GitHub stats](https://github-readme-stats.vercel.app/api?username=isliese)](https://github.com/anuraghazra/github-readme-stats)
+[![Yeonwoo's GitHub stats](https://github-readme-stats.vercel.app/api?username=yeonujirong)](https://github.com/anuraghazra/github-readme-stats)
+[![MinYeong's GitHub stats](https://github-readme-stats.vercel.app/api?username=minzero31)](https://github.com/anuraghazra/github-readme-stats)
 </details>
 
 <details>
