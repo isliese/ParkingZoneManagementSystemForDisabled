@@ -1,11 +1,21 @@
 <details>
-  <summary># 프로젝트명
+  <summary> <h1>프로젝트명</h1>
   </summary>
   sdfsdf
 </details>
 
+<details>
+  <summary><h1>목차</h1>
+  </summary>
+  sdfsdf
+</details>
 
-# 목차
+<details>
+  <summary>프로젝트 배경
+  </summary>
+  sdfsdf
+</details>
+
 
 #프로젝트 배경
 
