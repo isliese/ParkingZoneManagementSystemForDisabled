@@ -48,8 +48,6 @@
   sdfsdf
 </details>
 
----
-
 <details>
   <summary><h3>팀원 및 참고 자료</h3>
   </summary>
@@ -59,8 +57,6 @@
 
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=yeonjin0121)](https://github.com/anuraghazra/github-readme-stats)
 </details>
-
----
 
 <details>
   <summary><h3>라이센스</h3>
