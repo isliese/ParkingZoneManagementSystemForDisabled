@@ -96,7 +96,14 @@
             color: #333;
         }
 
-
+        /* 저작권 이미지 위치 설정 */
+        .footer {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        }
         
 
         #EmailContainer {
@@ -139,11 +146,10 @@
         </a>
     </div>
 
-    <!--저작권 이미지-->
-    <a href="{{ url_for('nodisabled') }}">
-        <img src="{{ url_for('static', filename='image/CopyRight.png') }}" width="1700" height="90"
-            class="bottom-image" />
-    </a>
+    <!--footer 영역-->
+  <div class="footer">
+    <img src="{{ url_for('static', filename='image/CopyRight.png') }}" style="width: 100%; height: auto;" />
+  </div>
 </body>
 
 </html>

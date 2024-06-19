@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Login Success Page</title>
+  <title>Sign Up Success Page</title>
   <style>
     #padding {
       margin-top: 100px;
@@ -15,21 +15,23 @@
     }
 
     /* 저작권 이미지 위치 설정 */
-    .Copyright {
-      position: absolute;
+    .footer {
+      width: 100%;
+      position: fixed;
+      bottom: 0;
       left: 0;
-      top: 898px;
+      text-align: center;
     }
 
-    /* 로그인 성공 이미지 위치 설정 */
-    .LoginSuccessPicture {
+    /* 회원가입 성공 이미지 위치 설정 */
+    .SignUpSuccessPicture {
       position: absolute;
-      left: 642px;
+      left: 725px;
       top: 275px;
     }
 
-    /* 로그인 확인 이미지 위치 설정 */
-    .LoginVerified {
+    /* 회원가입 확인 이미지 위치 설정 */
+    .SignUpVerified {
       position: absolute;
       left: 679px;
       top: 600px;
@@ -52,19 +54,19 @@
 <body>
   <div id="padding"></div>
 
-  <!-- 저작권 이미지 (CopyRight.png) -->
-  <div class="Copyright">
-    <img src="{{ url_for('static', filename='image/CopyRight.png') }}" width="1512" height="98" />
+  <!--footer 영역-->
+  <div class="footer">
+    <img src="{{ url_for('static', filename='image/CopyRight.png') }}" style="width: 100%; height: auto;" />
   </div>
 
-  <!-- 로그인 성공 이미지 (LoginSuccessPicture.png) -->
-  <div class="LoginSuccessPicture">
-    <img src="{{ url_for('static', filename='image/LoginSuccessPicture.png') }}" width="284" height="309" />
+  <!-- 회원가입 성공 이미지 (SignUpSuccessPicture.png) -->
+  <div class="SignUpSuccessPicture">
+    <img src="{{ url_for('static', filename='image/SignUpSuccessPicture.png') }}" width="284" height="309" />
   </div>
 
-  <!-- 로그인 확인 이미지 (LoginVerified!.png) -->
-  <div class="LoginVerified">
-    <img src="{{ url_for('static', filename='image/LoginVerified!.png') }}" width="263" height="36" />
+  <!-- 회원가입 확인 이미지 (LoginVerified!.png) -->
+  <div class="SignUpVerified">
+    <img src="{{ url_for('static', filename='image/SignUpVerified!.png') }}" width="263" height="36" />
     <!-- 카운트다운 텍스트를 표시할 요소 -->
     <div id="countdown" class="countdown"></div>
   </div>
@@ -78,20 +80,21 @@
     // 카운트다운 텍스트를 업데이트하는 함수
     function updateCountdown() {
       if (countdown > 0) {
-        document.getElementById("countdown").innerText = "\n" + countdown + "초 뒤에 자동차 선택 화면으로 이동합니다";
+        document.getElementById("countdown").innerText = countdown + "초 뒤에 Home으로 이동합니다";
         countdown--;
       } else {
         clearInterval(interval); // 카운트다운이 끝나면 인터벌을 제거합니다.
-        window.location.href = "ParkingLot"; // 리다이렉트
+        window.location.href = "/"; // 리다이렉트
       }
     }
 
     // 페이지 로드 시 카운트다운 시작
     window.onload = function () {
       updateCountdown(); // 즉시 업데이트를 위해 처음 한 번 호출
-      var interval = setInterval(updateCountdown, 1000); // 1초마다 updateCountdown 호출
+      interval = setInterval(updateCountdown, 1000); // 1초마다 updateCountdown 호출
     }
   </script>
+
 </body>
 
 </html>

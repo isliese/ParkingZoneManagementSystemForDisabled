@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>No Disabled Page</title>
+  <title>Parking State Managing Page</title>
 
   <style>
     #padding {
@@ -17,14 +17,14 @@
       /* 자동 마진을 사용하여 수평 중앙 정렬을 적용합니다. */
     }
 
-    /* Hmm 이미지 위치 설정 */
-    .Hmm {
+    /* 새로운 이미지 위치 설정 */
+    .SignAndCar {
       position: absolute;
       /* 절대 위치를 사용하여 배치합니다. */
       left: 380px;
-      /* x 좌표값을 설정합니다. */
-      top: 182px;
-      /* y 좌표값을 설정합니다. */
+      /* 새로운 x 좌표값을 설정합니다. */
+      top: 333px;
+      /* 새로운 y 좌표값을 설정합니다. */
     }
 
     /* Home 이미지 위치 설정 */
@@ -52,19 +52,21 @@
 <body>
   <div id="padding"></div>
 
-  <!-- Hmm 이미지 (이름 변경된 이미지) -->
-  <div class="Hmm">
-    <img src="{{ url_for('static', filename='image/Hmm.png') }}" width="751" height="545"
+  <!--새 이미지 (SignandCar.png)-->
+  <div class="SignAndCar">
+    <img src="{{ url_for('static', filename='image/SignandCar.png') }}" width="751" height="394"
       style="display: block; margin-left: auto; margin-right: auto" />
   </div>
 
-  <!-- Home 이미지 -->
+  <!--Home 이미지 (Home.png)-->
   <div class="HomeImage">
-    <img src="{{ url_for('static', filename='image/Home.png') }}" width="313" height="105"
-      style="display: block; margin-left: auto; margin-right: auto" />
+    <a href="{{ url_for('disabled') }}">
+      <img src="{{ url_for('static', filename='image/Home.png') }}" width="270"
+        style="display: block; margin-left: auto; margin-right: auto" />
+    </a>
   </div>
 
-  <!-- 저작권 이미지 -->
+  <!--저작권 이미지 (CopyRight.png)-->
   <div class="Copyright">
     <img src="{{ url_for('static', filename='image/CopyRight.png') }}" width="1512" height="98"
       style="display: block; margin-left: auto; margin-right: auto" />

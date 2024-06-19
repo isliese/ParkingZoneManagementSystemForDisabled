@@ -38,5 +38,9 @@ def signup():
 def signupsuccess():
     return render_template('SignUpSuccess.html')
 
+@app.route('/Report')
+def report():
+    return render_template('Report.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

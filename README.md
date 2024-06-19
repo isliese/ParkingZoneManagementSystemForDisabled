@@ -58,10 +58,10 @@
 <details>
   <summary><h3>팀원 및 참고 자료</h3>
   </summary>
-[![Yeonjin's GitHub stats](https://github-readme-stats.vercel.app/api?username=yeonjin0121)](https://github.com/anuraghazra/github-readme-stats)
-[![Chanran's GitHub stats](https://github-readme-stats.vercel.app/api?username=isliese)](https://github.com/anuraghazra/github-readme-stats)
-[![Yeonwoo's GitHub stats](https://github-readme-stats.vercel.app/api?username=yeonujirong)](https://github.com/anuraghazra/github-readme-stats)
-[![MinYeong's GitHub stats](https://github-readme-stats.vercel.app/api?username=minzero31)](https://github.com/anuraghazra/github-readme-stats)
+[![Yeonjin's GitHub stats](https://github-readme-stats.vercel.app/api?username=yeonjin0121)](https://github.com/anuraghazra/github-readme-stats)<br>
+[![Chanran's GitHub stats](https://github-readme-stats.vercel.app/api?username=isliese)](https://github.com/anuraghazra/github-readme-stats)<br>
+[![Yeonwoo's GitHub stats](https://github-readme-stats.vercel.app/api?username=yeonujirong)](https://github.com/anuraghazra/github-readme-stats)<br>
+[![MinYeong's GitHub stats](https://github-readme-stats.vercel.app/api?username=minzero31)](https://github.com/anuraghazra/github-readme-stats)<br>
 </details>
 
 <details>
