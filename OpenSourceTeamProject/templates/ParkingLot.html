@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Parking Lot Page</title>
+  <style>
+    /* 기본 설정 */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    #padding {
+      margin-top: 100px;
+    }
+
+    /* Home 이미지 위치 설정 */
+    .HomeImage {
+      position: absolute;
+      /* 절대 위치를 사용하여 배치합니다. */
+      left: 30px;
+      /* x 좌표값을 설정합니다. */
+      top: 29px;
+      /* y 좌표값을 설정합니다. */
+    }
+
+    .disabledSign {
+      position: absolute;
+      right: 30px;
+      /* 우측으로부터 30px 위치 */
+      top: 30px;
+      /* 상단으로부터 30px 위치 */
+    }
+
+    /* Center images */
+    img.centered {
+      display: block;
+      margin: auto;
+    }
+
+    /* 이미지 및 텍스트 위치 설정 */
+    .CarImage {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .Car1Image {
+      left: 10%;
+      top: 50%;
+    }
+
+    .Car2Image {
+      left: 25%;
+      top: 50%;
+    }
+
+    .Car3Image {
+      left: 40%;
+      top: 50%;
+    }
+
+    .Car4Image {
+      left: 55%;
+      top: 52%;
+    }
+
+    .Car5Image {
+      left: 70%;
+      top: 50%;
+    }
+
+    .Car6Image {
+      left: 85%;
+      top: 50%;
+    }
+
+    .hoverText {
+      position: absolute;
+      color: black;
+      background-color: white;
+      padding: 5px;
+      font-size: 1rem;
+      display: none;
+      border: 1px solid black;
+      z-index: 100;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .footer {
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+
+      /* Adjust padding for smaller screens */
+      #padding {
+        margin-top: 50px;
+      }
+
+      /* Adjust font size for hover text */
+      .hoverText {
+        font-size: 0.8rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+
+      /* Further adjust padding for very small screens */
+      #padding {
+        margin-top: 30px;
+      }
+
+      /* Further adjust font size for hover text */
+      .hoverText {
+        font-size: 0.6rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="padding"></div>
+
+  <!-- Home 이미지 -->
+  <div class="HomeImage">
+    <a href="{{ url_for('index') }}">
+      <img src="{{ url_for('static', filename='image/Home.png') }}" width="270"
+        style="display: block; margin-left: auto; margin-right: auto" />
+    </a>
+  </div>
+
+  <!-- disabledSign 이미지 -->
+  <div class="disabledSign">
+    <img src="{{ url_for('static', filename='image/disabledSign.png') }}" width="102" height="145"
+      style="display: block; margin-left: auto; margin-right: auto" />
+  </div>
+
+  <!-- Car1 image -->
+  <div class="CarImage Car1Image" onmouseover="showText('topCarText1')" onmouseout="hideText('topCarText1')">
+    <a href="#" onclick="sendCarNumber(1)">
+      <img src="{{ url_for('static', filename='image/Car1.png') }}" width="80%" class="centered" />
+      <div id="topCarText1" class="hoverText">Car1 Text (장애인)</div>
+    </a>
+  </div>
+
+  <!-- Car2 image -->
+  <div class="CarImage Car2Image" onmouseover="showText('bottomCarText2')" onmouseout="hideText('bottomCarText2')">
+    <a href="#" onclick="sendCarNumber(2)">
+      <img src="{{ url_for('static', filename='image/Car2.png') }}" width="80%" class="centered" />
+      <div id="bottomCarText2" class="hoverText">Car2 Text (비장애인)</div>
+    </a>
+  </div>
+
+  <!-- Car3 image -->
+  <div class="CarImage Car3Image" onmouseover="showText('topCarText3')" onmouseout="hideText('topCarText3')">
+    <a href="#" onclick="sendCarNumber(3)">
+      <img src="{{ url_for('static', filename='image/Car3.png') }}" width="80%" class="centered" />
+      <div id="topCarText3" class="hoverText">Car3 Text (비장애인)</div>
+    </a>
+  </div>
+
+  <!-- Car4 image -->
+  <div class="CarImage Car4Image" onmouseover="showText('bottomCarText4')" onmouseout="hideText('bottomCarText4')">
+    <a href="#" onclick="sendCarNumber(4)">
+      <img src="{{ url_for('static', filename='image/Car4.png') }}" width="80%" class="centered" />
+      <div id="bottomCarText4" class="hoverText">Car4 Text (장애인)</div>
+    </a>
+  </div>
+
+  <!-- Car5 image -->
+  <div class="CarImage Car5Image" onmouseover="showText('topCarText5')" onmouseout="hideText('topCarText5')">
+    <a href="#" onclick="sendCarNumber(5)">
+      <img src="{{ url_for('static', filename='image/Car2.png') }}" width="80%" class="centered" />
+      <div id="topCarText5" class="hoverText">Car5 Text (장애인)</div>
+    </a>
+  </div>
+
+  <!-- Car6 image -->
+  <div class="CarImage Car6Image" onmouseover="showText('bottomCarText6')" onmouseout="hideText('bottomCarText6')">
+    <a href="#" onclick="sendCarNumber(6)">
+      <img src="{{ url_for('static', filename='image/Car1.png') }}" width="80%" class="centered" />
+      <div id="bottomCarText6" class="hoverText">Car6 Text (비장애인)</div>
+    </a>
+  </div>
+
+  <!--footer 영역-->
+  <div class="footer">
+    <img src="{{ url_for('static', filename='image/CopyRight.png') }}" style="width: 100%; height: auto;" />
+  </div>
+
+  <script>
+    function showText(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+
+    function hideText(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+
+    function sendCarNumber(carNumber) {
+      fetch('/setCarNumber', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ carNumber: carNumber })
+      });
+    }
+  </script>
+
+</body>
+
+</html>
