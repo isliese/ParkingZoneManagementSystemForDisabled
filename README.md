@@ -31,7 +31,7 @@
 <details>
   <summary><h3>프로젝트 설명</h3>
   </summary>
-  sdfsdf
+  인공지능 모델 활용
 </details>
 
 <details>
