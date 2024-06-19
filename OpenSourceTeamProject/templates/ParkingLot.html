@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Parking Lot Page</title>
+  <style>
+    #padding {
+      margin-top: 100px;
+    }
+
+    /* Center images */
+    img.centered {
+      display: block;
+      margin: auto;
+    }
+
+    /* Home image styling */
+    .HomeImage {
+      position: absolute;
+      left: 2%;
+      top: 3%;
+    }
+
+    /* Car images styling */
+    .TopCarImage,
+    .BottomCarImage {
+      position: absolute;
+    }
+
+    .TopCarImage {
+      left: 50%;
+      top: 40%;
+      transform: translate(-50%, -50%);
+    }
+
+    .BottomCarImage {
+      left: 75%;
+      top: 80%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* Text styling */
+    .hoverText {
+      position: absolute;
+      color: black;
+      background-color: white;
+      padding: 5px;
+      font-size: 1rem;
+      display: none;
+      border: 1px solid black;
+      z-index: 100;
+    }
+
+    /* Responsive background image */
+    body {
+      background-image: url('{{ url_for('static', filename='image/ParkingLot.png') }}');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    @media (max-width: 768px) {
+      /* Adjust padding for smaller screens */
+      #padding {
+        margin-top: 50px;
+      }
+
+      /* Adjust font size for hover text */
+      .hoverText {
+        font-size: 0.8rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      /* Further adjust padding for very small screens */
+      #padding {
+        margin-top: 30px;
+      }
+
+      /* Further adjust font size for hover text */
+      .hoverText {
+        font-size: 0.6rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="padding"></div>
+
+  <!-- Home image -->
+  <div class="HomeImage">
+    <a href="{{ url_for('index') }}">
+      <img src="{{ url_for('static', filename='image/Home.png') }}" width="270" class="centered" />
+    </a>
+  </div>
+
+  <!-- TopCar image -->
+  <div class="TopCarImage" onmouseover="showText('topCarText')" onmouseout="hideText('topCarText')">
+    <a href="{{ url_for('disabled') }}">
+      <img src="{{ url_for('static', filename='image/parkinglot_car.png') }}" width="100%" class="centered" />
+      <div id="topCarText" class="hoverText" style="left: 50%; top: 50%; transform: translate(-50%, -50%);">Top Car Text</div>
+    </a>
+  </div>
+
+  <!-- BottomCar image -->
+  <div class="BottomCarImage" onmouseover="showText('bottomCarText')" onmouseout="hideText('bottomCarText')">
+    <a href="{{ url_for('nodisabled') }}">
+      <img src="{{ url_for('static', filename='image/parkinglot_car.png') }}" width="100%" class="centered" />
+      <div id="bottomCarText" class="hoverText" style="left: 50%; top: 50%; transform: translate(-50%, -50%);">Bottom Car Text</div>
+    </a>
+  </div>
+
+  <script>
+    function showText(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+
+    function hideText(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+  </script>
+</body>
+
+</html>
