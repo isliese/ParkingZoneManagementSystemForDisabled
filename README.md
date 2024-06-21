@@ -58,10 +58,13 @@
 <details>
   <summary><h3>팀원 및 참고 자료</h3>
   </summary>
-[![Yeonjin's GitHub stats](https://github-readme-stats.vercel.app/api?username=yeonjin0121)](https://github.com/anuraghazra/github-readme-stats)<br>
-[![Chanran's GitHub stats](https://github-readme-stats.vercel.app/api?username=isliese)](https://github.com/anuraghazra/github-readme-stats)<br>
-[![Yeonwoo's GitHub stats](https://github-readme-stats.vercel.app/api?username=yeonujirong)](https://github.com/anuraghazra/github-readme-stats)<br>
-[![MinYeong's GitHub stats](https://github-readme-stats.vercel.app/api?username=minzero31)](https://github.com/anuraghazra/github-readme-stats)<br>
+숙명여대 인공지능공학부 23학번 김민영
+숙명여대 인공지능공학부 23학번 김찬란
+![isliese's GitHub stats](https://github-readme-stats.vercel.app/api?username=isliese&theme=dark&show_icons=true)
+  
+숙명여대 인공지능공학부 23학번 이연우
+숙명여대 인공지능공학부 23학번 이연진
+  
 </details>
 
 <details>
