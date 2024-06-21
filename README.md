@@ -44,7 +44,9 @@
 <details>
   <summary><h3>프로젝트 결과</h3>
   </summary>
-  sdfsdf
+ UI 디자인 및 기능 노션 링크 : https://precious-pressure-b75.notion.site/445135c1ce1d46a38c780060f18c496b <br>
+
+  
 </details>
 
 ---
