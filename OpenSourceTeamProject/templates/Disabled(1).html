@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Disabled Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* 이미지를 가운데로 정렬하기 위한 스타일 */
+    img {
+      display: block;
+      margin: auto;
+    }
+
+    /* 전체 컨테이너 위치 설정 */
+    .container {
+      position: relative;
+      padding-top: 100px;
+    }
+
+    /* 차와 번호판 이미지 (SignandCar.png) 위치 설정 */
+    .SignAndCar {
+      text-align: center;
+    }
+
+    .SignAndCar img {
+      width: 100%; /* 이미지를 가득 채우도록 설정 */
+      max-width: 751px; /* 최대 너비 설정 */
+      height: auto; /* 비율 유지 */
+    }
+
+    /* 추가 텍스트 위치 설정 */
+    .AdditionalText {
+      position: absolute;
+      top: 50px; /* 이미지 위쪽으로 설정 */
+      left: 50%; /* 가운데 정렬 */
+      transform: translateX(-50%);
+      font-size: 24px; /* 텍스트 크기 */
+      font-weight: bold; /* 굵게 */
+      color: #333; /* 글자 색상 */
+    }
+
+    /* Home 이미지 (Home.png) 위치 설정 */
+    .HomeImage {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+    }
+
+    /* 저작권 이미지 (CopyRight.png) 위치 설정 */
+    .footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* 추가 버튼 이미지 (CheckButton.png) 위치 설정 */
+    .CheckButton {
+      position: absolute;
+      top: 198px;
+      right: 30px;
+    }
+
+    @media (max-width: 1200px) {
+      /* 1200px 미만의 화면 크기에 대한 조정 */
+      .AdditionalText {
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      /* 768px 미만의 화면 크기에 대한 조정 */
+      .container {
+        padding-top: 50px;
+      }
+
+      .AdditionalText {
+        font-size: 16px;
+      }
+
+      .HomeImage {
+        top: 15px;
+        left: 15px;
+      }
+
+      .CheckButton {
+        top: 150px;
+        right: 400px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      /* 480px 미만의 화면 크기에 대한 조정 */
+      .container {
+        padding-top: 30px;
+      }
+
+      .AdditionalText {
+        font-size: 14px;
+      }
+
+      .HomeImage {
+        top: 10px;
+        left: 10px;
+      }
+
+      .CheckButton {
+        top: 120px;
+        right: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- SignandCar 이미지와 추가 텍스트 -->
+    <div class="SignAndCar">
+      <img src="{{ url_for('static', filename='image/SignandCar.png') }}" alt="Sign and Car Image" />
+      <div class="AdditionalText">42구 9833</div>
+    </div>
+
+    <!-- Home 이미지 -->
+    <div class="HomeImage">
+      <a href="{{ url_for('index') }}">
+        <img src="{{ url_for('static', filename='image/Home.png') }}" alt="Home Image" width="270" />
+      </a>
+    </div>
+
+    <!-- 저작권 이미지 -->
+    <div class="footer">
+      <img src="{{ url_for('static', filename='image/CopyRight.png') }}" alt="CopyRight Image" style="width: 100%; height: auto;" />
+    </div>
+
+    <!-- CheckButton 이미지 -->
+    <div class="CheckButton">
+      <img src="{{ url_for('static', filename='image/CheckButton.png') }}" alt="CheckButton Image" width="172" height="173" />
+    </div>
+
+  </div>
+</body>
+
+</html>
