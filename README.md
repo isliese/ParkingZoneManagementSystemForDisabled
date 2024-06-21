@@ -58,7 +58,7 @@
 </details>
 
 <details>
-  <summary><h3>라이센스</h3>
+  <summary><h3>License</h3>
   </summary>
 ㄴㅇㄹ
 </details>
