@@ -58,12 +58,10 @@
 <details>
   <summary><h3>팀원 및 참고 자료</h3>
   </summary>
-숙명여대 인공지능공학부 23학번 김민영
-숙명여대 인공지능공학부 23학번 김찬란
-![isliese's GitHub stats](https://github-readme-stats.vercel.app/api?username=isliese&theme=dark&show_icons=true)
-  
-숙명여대 인공지능공학부 23학번 이연우
-숙명여대 인공지능공학부 23학번 이연진
+숙명여대 인공지능공학부 23학번 김민영 <br>
+숙명여대 인공지능공학부 23학번 김찬란 <br>
+숙명여대 인공지능공학부 23학번 이연우 <br>
+숙명여대 인공지능공학부 23학번 이연진 <br>
   
 </details>
 
