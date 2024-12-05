@@ -102,7 +102,7 @@
 
 MIT License
 
-Copyright (c) 2024 Chanran kim
+Copyright (c) 2024 Minyoung Kim, Chanran kim, Yeonwoo Lee, Yeonjin Lee
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
